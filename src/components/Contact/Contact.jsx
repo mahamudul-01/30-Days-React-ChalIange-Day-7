@@ -1,7 +1,7 @@
 
 const Contact = () => {
     return (
-        <div>
+        <div className="text-red-500">
             this is contact
         </div>
     );
