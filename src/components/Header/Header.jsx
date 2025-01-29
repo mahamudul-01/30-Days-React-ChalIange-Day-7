@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div>
+        <div className="bg-gray-200 p-4 flex justify-between">
+            <h2>navbar</h2>
             <nav>
-                <ul>
+                <ul className="flex justify-center space-x-4">
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact</Link>
                 </ul>
