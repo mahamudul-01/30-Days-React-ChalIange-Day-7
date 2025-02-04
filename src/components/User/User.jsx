@@ -1,5 +1,6 @@
-
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 const User = ({user}) => {
     const {id,name,username,email,phone} = user;
     return (
@@ -17,10 +18,14 @@ const User = ({user}) => {
           <p className="text-gray-700 text-base">
             <span className="font-semibold">Phone:</span> {phone}
           </p>
+          <Link to={`/users/${id}`} className="text-blue-500 hover:underline">
+            See User Details
+          </Link>
         </div>
       );
 };
-User .propTypes = {
+
+User.propTypes = {
     user: PropTypes.object.isRequired,
 };
 
