@@ -12,11 +12,14 @@ import Contact from './components/Contact/Contact';
 import './index.css';
 import Users from './components/Users/Users';
 import UserDetils from './components/UserDetails/UserDetils';
+import NotFound from './components/NotFound/NotFound';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,children: [
+    element: <Home></Home>,
+    errorElement: <NotFound></NotFound>,
+    children: [
       {
         path: "/about",
         element: <About></About>
