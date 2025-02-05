@@ -3,6 +3,6 @@
     font-weight: bold;
     background-color: #E0E7FF; /* Light Indigo background */
     border-radius: 0.5rem; /* Rounded corners */
-    padding: 0.5rem 1rem; /* Add padding for better spacing */
+    /* Add padding for better spacing */
     transition: all 0.3s ease-in-out; /* Smooth transition */
   }

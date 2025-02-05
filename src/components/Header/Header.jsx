@@ -7,9 +7,9 @@ const Header = () => {
             <h2>navbar</h2>
             <nav>
                 <ul className="flex justify-center space-x-4">
-                    <NavLink to="/users" >Users</NavLink>    
-                    <NavLink to="/about" >About</NavLink>
-                    <NavLink to="/contact" >Contact</NavLink>
+                    <NavLink to="/users" className={({ isActive }) => isActive ? 'active' : ''}>Users</NavLink>    
+                    <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink>
+                    <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact</NavLink>
                 </ul>
             </nav>
         </div>
